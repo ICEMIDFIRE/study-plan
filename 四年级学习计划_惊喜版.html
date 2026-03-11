@@ -577,19 +577,19 @@
 
     <script>
         // 学习计划数据（广州天河区四年级下学期）
-        // 学习时间：每天 20:00-21:30，周六日延长到 22:00
+        // 学习时间：周一到周五 20:00-21:30，周六日延长到 22:00
         const scheduleData = {
             1: {
                 dates: '3 月 2 日 - 3 月 9 日',
                 tasks: [
                     { time: '🍽️ 19:00-20:00', mon: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'}, tue: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'}, wed: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'}, thu: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'}, fri: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'}, sat: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'}, sun: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'} },
-                    { time: '🔢 20:00-20:10<br><span style="font-size:10px">大九九</span>', mon: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:1}, tue: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:2}, wed: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:3}, thu: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:4}, fri: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:5}, sat: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:6}, sun: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:7} },
-                    { time: '📝 20:10-20:25<br><span style="font-size:10px">语文练字</span>', mon: {icon:'✏️',title:'练字',desc:'第一课生字',task:8}, tue: {icon:'✏️',title:'练字',desc:'第一课生字',task:9}, wed: {icon:'✏️',title:'练字',desc:'第二课生字',task:10}, thu: {icon:'✏️',title:'练字',desc:'第二课生字',task:11}, fri: {icon:'✏️',title:'练字',desc:'字词巩固',task:12}, sat: {icon:'✏️',title:'练字',desc:'本周复习',task:13}, sun: {icon:'🌳',title:'休息',desc:'自由活动'} },
-                    { time: '☕ 20:25-20:30<br><span style="font-size:10px">休息</span>', mon: {icon:'☕',title:'休息',desc:'喝水'}, tue: {icon:'☕',title:'休息',desc:'喝水'}, wed: {icon:'☕',title:'休息',desc:'喝水'}, thu: {icon:'☕',title:'休息',desc:'喝水'}, fri: {icon:'☕',title:'休息',desc:'喝水'}, sat: {icon:'☕',title:'休息',desc:'喝水'}, sun: {icon:'☕',title:'休息',desc:'喝水'} },
-                    { time: '📐 20:30-21:00<br><span style="font-size:10px">数学</span>', mon: {icon:'📐',title:'预复习',desc:'第一单元',task:14}, tue: {icon:'🎮',title:'小班课',desc:'周五固定'}, wed: {icon:'📐',title:'预复习',desc:'第一单元',task:15}, thu: {icon:'🎮',title:'小班课',desc:'周五固定'}, fri: {icon:'🎮',title:'小班课',desc:'周五固定'}, sat: {icon:'📝',title:'错题',desc:'本周整理',task:16}, sun: {icon:'🌳',title:'休息',desc:'自由活动'} },
-                    { time: '☕ 21:00-21:05<br><span style="font-size:10px">休息</span>', mon: {icon:'☕',title:'休息',desc:'吃点水果'}, tue: {icon:'☕',title:'休息',desc:'吃点水果'}, wed: {icon:'☕',title:'休息',desc:'吃点水果'}, thu: {icon:'☕',title:'休息',desc:'吃点水果'}, fri: {icon:'☕',title:'休息',desc:'吃点水果'}, sat: {icon:'☕',title:'休息',desc:'吃点水果'}, sun: {icon:'☕',title:'休息',desc:'吃点水果'} },
-                    { time: '🔤 21:05-21:25<br><span style="font-size:10px">英语</span>', mon: {icon:'🔤',title:'单词',desc:'Unit1',task:17}, tue: {icon:'🌳',title:'休息',desc:'隔天学习'}, wed: {icon:'🔤',title:'单词',desc:'Unit1',task:18}, thu: {icon:'🌳',title:'休息',desc:'隔天学习'}, fri: {icon:'🔤',title:'单词',desc:'Unit1',task:19}, sat: {icon:'🎬',title:'动画',desc:'英文动画',task:20}, sun: {icon:'🌳',title:'休息',desc:'自由活动'} },
-                    { time: '📚 21:25-21:30/22:00<br><span style="font-size:10px">阅读</span>', mon: {icon:'📚',title:'阅读',desc:'课外书',task:21}, tue: {icon:'📚',title:'阅读',desc:'课外书',task:22}, wed: {icon:'📚',title:'阅读',desc:'课外书',task:23}, thu: {icon:'📚',title:'阅读',desc:'课外书',task:24}, fri: {icon:'📚',title:'阅读',desc:'课外书',task:25}, sat: {icon:'📚',title:'阅读',desc:'课外书',task:26}, sun: {icon:'📚',title:'阅读',desc:'课外书',task:27} },
+                    { time: '🔢 20:00-20:10<br><span style="font-size:10px">大九九</span>', mon: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:1,checkin:2}, tue: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:2,checkin:2}, wed: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:3,checkin:2}, thu: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:4,checkin:2}, fri: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:5,checkin:2}, sat: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:6,checkin:2}, sun: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:7,checkin:2} },
+                    { time: '📝 20:10-20:25<br><span style="font-size:10px">语文练字</span>', mon: {icon:'✏️',title:'练字',desc:'第一课生字',task:8,checkin:3}, tue: {icon:'✏️',title:'练字',desc:'第一课生字',task:9,checkin:3}, wed: {icon:'✏️',title:'练字',desc:'第二课生字',task:10,checkin:3}, thu: {icon:'✏️',title:'练字',desc:'第二课生字',task:11,checkin:3}, fri: {icon:'✏️',title:'练字',desc:'字词巩固',task:12,checkin:3}, sat: {icon:'✏️',title:'练字',desc:'本周复习',task:13,checkin:3}, sun: {icon:'🌳',title:'休息',desc:'自由活动'} },
+                    { time: '☕ 20:25-20:30<br><span style="font-size:10px">休息</span>', mon: {icon:'☕',title:'休息',desc:'喝水',break:true}, tue: {icon:'☕',title:'休息',desc:'喝水',break:true}, wed: {icon:'☕',title:'休息',desc:'喝水',break:true}, thu: {icon:'☕',title:'休息',desc:'喝水',break:true}, fri: {icon:'☕',title:'休息',desc:'喝水',break:true}, sat: {icon:'☕',title:'休息',desc:'喝水',break:true}, sun: {icon:'☕',title:'休息',desc:'喝水',break:true} },
+                    { time: '📐 20:30-21:00<br><span style="font-size:10px">数学</span>', mon: {icon:'📐',title:'预复习',desc:'第一单元',task:14,checkin:4}, tue: {icon:'🎮',title:'小班课',desc:'周五固定',task:15,checkin:4}, wed: {icon:'📐',title:'预复习',desc:'第一单元',task:16,checkin:4}, thu: {icon:'🎮',title:'小班课',desc:'周五固定',task:17,checkin:4}, fri: {icon:'🎮',title:'小班课',desc:'周五固定',task:18,checkin:4}, sat: {icon:'📝',title:'错题',desc:'本周整理',task:19,checkin:4}, sun: {icon:'🌳',title:'休息',desc:'自由活动'} },
+                    { time: '☕ 21:00-21:05<br><span style="font-size:10px">休息</span>', mon: {icon:'☕',title:'休息',desc:'吃点水果',break:true}, tue: {icon:'☕',title:'休息',desc:'吃点水果',break:true}, wed: {icon:'☕',title:'休息',desc:'吃点水果',break:true}, thu: {icon:'☕',title:'休息',desc:'吃点水果',break:true}, fri: {icon:'☕',title:'休息',desc:'吃点水果',break:true}, sat: {icon:'☕',title:'休息',desc:'吃点水果',break:true}, sun: {icon:'☕',title:'休息',desc:'吃点水果',break:true} },
+                    { time: '🔤 21:05-21:25<br><span style="font-size:10px">英语</span>', mon: {icon:'🔤',title:'单词',desc:'Unit1',task:20,checkin:5}, tue: {icon:'🌳',title:'休息',desc:'隔天学习'}, wed: {icon:'🔤',title:'单词',desc:'Unit1',task:21,checkin:5}, thu: {icon:'🌳',title:'休息',desc:'隔天学习'}, fri: {icon:'🔤',title:'单词',desc:'Unit1',task:22,checkin:5}, sat: {icon:'🎬',title:'动画',desc:'英文动画',task:23,checkin:5}, sun: {icon:'🌳',title:'休息',desc:'自由活动'} },
+                    { time: '📚 21:25-21:30/22:00<br><span style="font-size:10px">阅读</span>', mon: {icon:'📚',title:'阅读',desc:'课外书',task:24,checkin:6}, tue: {icon:'📚',title:'阅读',desc:'课外书',task:25,checkin:6}, wed: {icon:'📚',title:'阅读',desc:'课外书',task:26,checkin:6}, thu: {icon:'📚',title:'阅读',desc:'课外书',task:27,checkin:6}, fri: {icon:'📚',title:'阅读',desc:'课外书',task:28,checkin:6}, sat: {icon:'📚',title:'阅读',desc:'课外书',task:29,checkin:6}, sun: {icon:'📚',title:'阅读',desc:'课外书',task:30,checkin:6} },
                     { time: '😴 21:30/22:00', mon: {icon:'😴',title:'睡觉',desc:'21:30'}, tue: {icon:'😴',title:'睡觉',desc:'21:30'}, wed: {icon:'😴',title:'睡觉',desc:'21:30'}, thu: {icon:'😴',title:'睡觉',desc:'21:30'}, fri: {icon:'😴',title:'睡觉',desc:'21:30'}, sat: {icon:'😴',title:'睡觉',desc:'22:00'}, sun: {icon:'😴',title:'睡觉',desc:'22:00'} }
                 ]
             },
@@ -597,13 +597,13 @@
                 dates: '3 月 10 日 - 3 月 16 日',
                 tasks: [
                     { time: '🍽️ 19:00-20:00', mon: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'}, tue: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'}, wed: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'}, thu: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'}, fri: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'}, sat: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'}, sun: {icon:'🍽️',title:'晚餐 + 休息',desc:'好好吃饭'} },
-                    { time: '🔢 20:00-20:10<br><span style="font-size:10px">大九九</span>', mon: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:28}, tue: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:29}, wed: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:30}, thu: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:31}, fri: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:32}, sat: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:33}, sun: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:34} },
-                    { time: '📝 20:10-20:25<br><span style="font-size:10px">语文练字</span>', mon: {icon:'✏️',title:'练字',desc:'第二课',task:35}, tue: {icon:'✏️',title:'练字',desc:'第二课',task:36}, wed: {icon:'✏️',title:'练字',desc:'语文园地',task:37}, thu: {icon:'✏️',title:'练字',desc:'语文园地',task:38}, fri: {icon:'✏️',title:'练字',desc:'字词巩固',task:39}, sat: {icon:'✏️',title:'练字',desc:'本周复习',task:40}, sun: {icon:'🌳',title:'休息',desc:'自由活动'} },
-                    { time: '☕ 20:25-20:30<br><span style="font-size:10px">休息</span>', mon: {icon:'☕',title:'休息',desc:'喝水'}, tue: {icon:'☕',title:'休息',desc:'喝水'}, wed: {icon:'☕',title:'休息',desc:'喝水'}, thu: {icon:'☕',title:'休息',desc:'喝水'}, fri: {icon:'☕',title:'休息',desc:'喝水'}, sat: {icon:'☕',title:'休息',desc:'喝水'}, sun: {icon:'☕',title:'休息',desc:'喝水'} },
-                    { time: '📐 20:30-21:00<br><span style="font-size:10px">数学</span>', mon: {icon:'📐',title:'预复习',desc:'第二单元',task:41}, tue: {icon:'🎮',title:'小班课',desc:'周五固定'}, wed: {icon:'📐',title:'预复习',desc:'第二单元',task:42}, thu: {icon:'🎮',title:'小班课',desc:'周五固定'}, fri: {icon:'🎮',title:'小班课',desc:'周五固定'}, sat: {icon:'📝',title:'错题',desc:'本周整理',task:43}, sun: {icon:'🌳',title:'休息',desc:'自由活动'} },
-                    { time: '☕ 21:00-21:05<br><span style="font-size:10px">休息</span>', mon: {icon:'☕',title:'休息',desc:'吃点水果'}, tue: {icon:'☕',title:'休息',desc:'吃点水果'}, wed: {icon:'☕',title:'休息',desc:'吃点水果'}, thu: {icon:'☕',title:'休息',desc:'吃点水果'}, fri: {icon:'☕',title:'休息',desc:'吃点水果'}, sat: {icon:'☕',title:'休息',desc:'吃点水果'}, sun: {icon:'☕',title:'休息',desc:'吃点水果'} },
-                    { time: '🔤 21:05-21:25<br><span style="font-size:10px">英语</span>', mon: {icon:'🔤',title:'单词',desc:'Unit2',task:44}, tue: {icon:'🌳',title:'休息',desc:'隔天学习'}, wed: {icon:'🔤',title:'单词',desc:'Unit2',task:45}, thu: {icon:'🌳',title:'休息',desc:'隔天学习'}, fri: {icon:'🔤',title:'单词',desc:'Unit2',task:46}, sat: {icon:'🎬',title:'动画',desc:'英文动画',task:47}, sun: {icon:'🌳',title:'休息',desc:'自由活动'} },
-                    { time: '📚 21:25-21:30/22:00<br><span style="font-size:10px">阅读</span>', mon: {icon:'📚',title:'阅读',desc:'课外书',task:48}, tue: {icon:'📚',title:'阅读',desc:'课外书',task:49}, wed: {icon:'📚',title:'阅读',desc:'课外书',task:50}, thu: {icon:'📚',title:'阅读',desc:'课外书',task:51}, fri: {icon:'📚',title:'阅读',desc:'课外书',task:52}, sat: {icon:'📚',title:'阅读',desc:'课外书',task:53}, sun: {icon:'📚',title:'阅读',desc:'课外书',task:54} },
+                    { time: '🔢 20:00-20:10<br><span style="font-size:10px">大九九</span>', mon: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:31,checkin:2}, tue: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:32,checkin:2}, wed: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:33,checkin:2}, thu: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:34,checkin:2}, fri: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:35,checkin:2}, sat: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:36,checkin:2}, sun: {icon:'🔢',title:'大九九',desc:'1-9 乘法',task:37,checkin:2} },
+                    { time: '📝 20:10-20:25<br><span style="font-size:10px">语文练字</span>', mon: {icon:'✏️',title:'练字',desc:'第二课',task:38,checkin:3}, tue: {icon:'✏️',title:'练字',desc:'第二课',task:39,checkin:3}, wed: {icon:'✏️',title:'练字',desc:'语文园地',task:40,checkin:3}, thu: {icon:'✏️',title:'练字',desc:'语文园地',task:41,checkin:3}, fri: {icon:'✏️',title:'练字',desc:'字词巩固',task:42,checkin:3}, sat: {icon:'✏️',title:'练字',desc:'本周复习',task:43,checkin:3}, sun: {icon:'🌳',title:'休息',desc:'自由活动'} },
+                    { time: '☕ 20:25-20:30<br><span style="font-size:10px">休息</span>', mon: {icon:'☕',title:'休息',desc:'喝水',break:true}, tue: {icon:'☕',title:'休息',desc:'喝水',break:true}, wed: {icon:'☕',title:'休息',desc:'喝水',break:true}, thu: {icon:'☕',title:'休息',desc:'喝水',break:true}, fri: {icon:'☕',title:'休息',desc:'喝水',break:true}, sat: {icon:'☕',title:'休息',desc:'喝水',break:true}, sun: {icon:'☕',title:'休息',desc:'喝水',break:true} },
+                    { time: '📐 20:30-21:00<br><span style="font-size:10px">数学</span>', mon: {icon:'📐',title:'预复习',desc:'第二单元',task:44,checkin:4}, tue: {icon:'🎮',title:'小班课',desc:'周五固定',task:45,checkin:4}, wed: {icon:'📐',title:'预复习',desc:'第二单元',task:46,checkin:4}, thu: {icon:'🎮',title:'小班课',desc:'周五固定',task:47,checkin:4}, fri: {icon:'🎮',title:'小班课',desc:'周五固定',task:48,checkin:4}, sat: {icon:'📝',title:'错题',desc:'本周整理',task:49,checkin:4}, sun: {icon:'🌳',title:'休息',desc:'自由活动'} },
+                    { time: '☕ 21:00-21:05<br><span style="font-size:10px">休息</span>', mon: {icon:'☕',title:'休息',desc:'吃点水果',break:true}, tue: {icon:'☕',title:'休息',desc:'吃点水果',break:true}, wed: {icon:'☕',title:'休息',desc:'吃点水果',break:true}, thu: {icon:'☕',title:'休息',desc:'吃点水果',break:true}, fri: {icon:'☕',title:'休息',desc:'吃点水果',break:true}, sat: {icon:'☕',title:'休息',desc:'吃点水果',break:true}, sun: {icon:'☕',title:'休息',desc:'吃点水果',break:true} },
+                    { time: '🔤 21:05-21:25<br><span style="font-size:10px">英语</span>', mon: {icon:'🔤',title:'单词',desc:'Unit2',task:50,checkin:5}, tue: {icon:'🌳',title:'休息',desc:'隔天学习'}, wed: {icon:'🔤',title:'单词',desc:'Unit2',task:51,checkin:5}, thu: {icon:'🌳',title:'休息',desc:'隔天学习'}, fri: {icon:'🔤',title:'单词',desc:'Unit2',task:52,checkin:5}, sat: {icon:'🎬',title:'动画',desc:'英文动画',task:53,checkin:5}, sun: {icon:'🌳',title:'休息',desc:'自由活动'} },
+                    { time: '📚 21:25-21:30/22:00<br><span style="font-size:10px">阅读</span>', mon: {icon:'📚',title:'阅读',desc:'课外书',task:54,checkin:6}, tue: {icon:'📚',title:'阅读',desc:'课外书',task:55,checkin:6}, wed: {icon:'📚',title:'阅读',desc:'课外书',task:56,checkin:6}, thu: {icon:'📚',title:'阅读',desc:'课外书',task:57,checkin:6}, fri: {icon:'📚',title:'阅读',desc:'课外书',task:58,checkin:6}, sat: {icon:'📚',title:'阅读',desc:'课外书',task:59,checkin:6}, sun: {icon:'📚',title:'阅读',desc:'课外书',task:60,checkin:6} },
                     { time: '😴 21:30/22:00', mon: {icon:'😴',title:'睡觉',desc:'21:30'}, tue: {icon:'😴',title:'睡觉',desc:'21:30'}, wed: {icon:'😴',title:'睡觉',desc:'21:30'}, thu: {icon:'😴',title:'睡觉',desc:'21:30'}, fri: {icon:'😴',title:'睡觉',desc:'21:30'}, sat: {icon:'😴',title:'睡觉',desc:'22:00'}, sun: {icon:'😴',title:'睡觉',desc:'22:00'} }
                 ]
             },
@@ -691,18 +691,29 @@
             const tbody = document.getElementById('scheduleBody');
             const weekData = scheduleData[currentWeek];
             
-            tbody.innerHTML = weekData.tasks.map(row => `
-                <tr>
-                    <td>${row.time}</td>
-                    <td><div class="task-cell ${completedTasks.includes(row.mon.task) ? 'completed' : ''}" onclick="toggleTask(${row.mon.task}, this)">${row.mon.icon}<div class="task-title">${row.mon.title}<span class="checkbox ${completedTasks.includes(row.mon.task) ? 'checked' : ''}"></span></div><div class="task-desc">${row.mon.desc}</div></div></td>
-                    <td><div class="task-cell ${completedTasks.includes(row.tue.task) ? 'completed' : ''}" onclick="toggleTask(${row.tue.task}, this)">${row.tue.icon}<div class="task-title">${row.tue.title}<span class="checkbox ${completedTasks.includes(row.tue.task) ? 'checked' : ''}"></span></div><div class="task-desc">${row.tue.desc}</div></div></td>
-                    <td><div class="task-cell ${completedTasks.includes(row.wed.task) ? 'completed' : ''}" onclick="toggleTask(${row.wed.task}, this)">${row.wed.icon}<div class="task-title">${row.wed.title}<span class="checkbox ${completedTasks.includes(row.wed.task) ? 'checked' : ''}"></span></div><div class="task-desc">${row.wed.desc}</div></div></td>
-                    <td><div class="task-cell ${completedTasks.includes(row.thu.task) ? 'completed' : ''}" onclick="toggleTask(${row.thu.task}, this)">${row.thu.icon}<div class="task-title">${row.thu.title}<span class="checkbox ${completedTasks.includes(row.thu.task) ? 'checked' : ''}"></span></div><div class="task-desc">${row.thu.desc}</div></div></td>
-                    <td><div class="task-cell ${completedTasks.includes(row.fri.task) ? 'completed' : ''}" onclick="toggleTask(${row.fri.task}, this)">${row.fri.icon}<div class="task-title">${row.fri.title}<span class="checkbox ${completedTasks.includes(row.fri.task) ? 'checked' : ''}"></span></div><div class="task-desc">${row.fri.desc}</div></div></td>
-                    <td><div class="task-cell ${completedTasks.includes(row.sat.task) ? 'completed' : ''}" onclick="toggleTask(${row.sat.task}, this)">${row.sat.icon}<div class="task-title">${row.sat.title}<span class="checkbox ${completedTasks.includes(row.sat.task) ? 'checked' : ''}"></span></div><div class="task-desc">${row.sat.desc}</div></div></td>
-                    <td><div class="task-cell ${completedTasks.includes(row.sun.task) ? 'completed' : ''}" onclick="toggleTask(${row.sun.task}, this)">${row.sun.icon}<div class="task-title">${row.sun.title}<span class="checkbox ${completedTasks.includes(row.sun.task) ? 'checked' : ''}"></span></div><div class="task-desc">${row.sun.desc}</div></div></td>
-                </tr>
-            `).join('');
+            tbody.innerHTML = weekData.tasks.map(row => {
+                const renderCell = (dayData) => {
+                    if (dayData.break) {
+                        // 休息项：不显示打卡框，不可点击
+                        return `<div class="task-cell" style="cursor:default;opacity:0.6">${dayData.icon}<div class="task-title">${dayData.title}</div><div class="task-desc">${dayData.desc}</div></div>`;
+                    }
+                    const isCompleted = completedTasks.includes(dayData.task);
+                    return `<div class="task-cell ${isCompleted ? 'completed' : ''}" onclick="toggleTask(${dayData.task}, this)">${dayData.icon}<div class="task-title">${dayData.title}<span class="checkbox ${isCompleted ? 'checked' : ''}"></span></div><div class="task-desc">${dayData.desc}</div></div>`;
+                };
+                
+                return `
+                    <tr>
+                        <td>${row.time}</td>
+                        <td>${renderCell(row.mon)}</td>
+                        <td>${renderCell(row.tue)}</td>
+                        <td>${renderCell(row.wed)}</td>
+                        <td>${renderCell(row.thu)}</td>
+                        <td>${renderCell(row.fri)}</td>
+                        <td>${renderCell(row.sat)}</td>
+                        <td>${renderCell(row.sun)}</td>
+                    </tr>
+                `;
+            }).join('');
             
             updateStats();
             updateDailyProgress();
@@ -710,7 +721,21 @@
 
         // 切换任务（小惊喜）
         function toggleTask(taskId, cell) {
-            if (completedTasks.includes(taskId)) {
+            const isChecked = completedTasks.includes(taskId);
+            
+            // 获取任务的 checkin 索引
+            const weekData = scheduleData[currentWeek];
+            let checkinIndex = null;
+            weekData.tasks.forEach(row => {
+                const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+                days.forEach(day => {
+                    if (row[day] && row[day].task === taskId) {
+                        checkinIndex = row[day].checkin;
+                    }
+                });
+            });
+            
+            if (isChecked) {
                 completedTasks = completedTasks.filter(id => id !== taskId);
                 cell.classList.remove('completed');
                 cell.querySelector('.checkbox').classList.remove('checked');
@@ -718,6 +743,15 @@
                 completedTasks.push(taskId);
                 cell.classList.add('completed');
                 cell.querySelector('.checkbox').classList.add('checked');
+                
+                // 自动勾选打卡清单
+                if (checkinIndex) {
+                    const checkinCards = document.querySelectorAll('.checkin-card');
+                    if (checkinCards[checkinIndex - 1]) {
+                        checkinCards[checkinIndex - 1].classList.add('checked');
+                    }
+                }
+                
                 // 小惊喜：随机表情 + 烟花
                 showSmallSurprise();
                 createFirework(cell);
